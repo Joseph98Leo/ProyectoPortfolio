@@ -1,0 +1,113 @@
+// ################# QUERY FOOTER #####################
+
+@media(max-width: 1000px){
+    .collab__text,
+    .personal,
+    .media__text,
+    .media__items,
+    .address__text,
+    .address__contact
+    {
+        text-align: center;
+    }
+
+    .media__items
+    {
+        margin: 0 0 0 -4em;
+        padding-bottom: 15px;
+    }
+}
+
+
+// ######################### QUERY NAV ######################
+
+@mixin navResponsive {
+    @media only screen and (max-width: 1000px){
+        @content;
+    }
+}
+
+// ########################## QUERY INDEX HTML ######################
+
+@media(max-width: 980px){
+    .project
+    {
+        width: 90%;
+        margin: 14px auto;
+    }
+
+    .vertical
+    {
+        display: none;
+    }
+
+    .project1::after,
+    .project2::after
+    {
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    .whitespace{
+        display: none;
+    }
+}
+
+// ################## QUERY CONTACT HTML #################
+
+@media(max-width: 768px) {
+    .contactForm
+    {
+          padding: 4em;
+          width: 98%;
+    }
+
+    .textSection
+    {
+        padding: 5em;
+    }
+}
+
+// ################## QUERY PROJECT HTML ####################3
+
+@media only screen and (max-width: 768px){
+
+    .main_gallery
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .textProject
+    {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 430px){
+
+    .main
+    {
+
+        &__gallery
+        {
+            display: block;
+        }
+
+        &__img
+        {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 2% 0;
+
+            & img
+            {
+                display: block;
+                filter: brightness(1) grayscale(0);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-JsepGM</title>
+
+    <!-- #### Logo Pestaña ####-->
+    <link rel="icon" href="../img/coding.png">
+
+    <!-- #### BOOTSTRAP #### -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- #### GOOGLE FONTS #### -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
+        rel="stylesheet">
+
+    <!-- #### IONICON #### -->
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
+    <!-- #### WOW.JS #### -->
+    <link rel="stylesheet" href="../styles/animate.css">
+    <script src="../js/wow.min.js"></script>
+
+    <!-- #### CSS #### -->
+    <link rel="stylesheet" href="../styles/main.css">
+    
+</head>
+
+<body>
+    <div>
+        <!-- #### INICIO NAVIGATION #### -->
+        <header class="header">
+            <nav class="navigation">
+                <span class="navigation__brand">
+                    <a href="../index.html">JsepGM</a>
+                </span>
+    
+                <ul class="navigation__menu">
+                    <li class="navigation__item"><a href="../index.html">HOME</a></li>
+                    <li class="navigation__item"><a href="work.html">WORK</a></li>
+                    <li class="navigation__item"><a href="project.html">PROJECT</a></li>
+                    <li class="navigation__item"><a href="about.html">ABOUT ME</a></li>
+                    <li class="navigation__item"><a href="contact.html">CONTACT</a></li>
+                </ul>
+    
+                <div id="toggle" class="wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="span">MENU</div>
+                </div>
+    
+            </nav>
+    
+            <div class="resize">
+                <div class="resize--closeBtn">CLOSE</div>
+    
+                <ul class="resize__menu">
+                    <li class="resize__item"><a href="../index.html">HOME</a></li>
+                    <li class="resize__item"><a href="work.html">WORK</a></li>
+                    <li class="resize__item"><a href="project.html">PROJECT</a></li>
+                    <li class="resize__item"><a href="about.html">ABOUT ME</a></li>
+                    <li class="resize__item"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- ##### FIN NAVIGATION ##### -->
+
+        <div class="whitespace"></div>
+
+        <!-- #### INICIO BANNER SECTION #### -->
+        <section class="container">
+            <div class="hero-content">
+
+                <div class="row">
+                    <div class="col-lg-8 textSection">
+                        <h3 class="wow fadeInUp" data-wow-delay="1s">hello</h3>
+                        <p class="wow fadeInUp" data-wow-delay="1.2s">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Praesentium tenetur pariatur mollitia cumque, nisi quam ducimus
+                            natus quaerat consequuntur aliquam, minima reiciendis temporibus
+                            doloremque ab distinctio quia, ipsum nobis illum nihil ipsa
+                            laudantium excepturi? Distinctio nostrum hic expedita odio et?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- #### FIN BANNER SECTION #### -->
+
+        <div class="whitespace"></div>
+
+        <!-- #### INICIO FORM ####-->
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <form name="contact-form" class="contactForm" method="post" action="">
+                        <ul>
+                            <li class="contactForm__list wow fadeInUp" data-wow-delay="1.4s">
+                                <label for="contact-name">Name :</label>
+                                <div class="contactForm__textArea">
+                                    <input type="text" name="contact-name" id="contact-name" value="" required />
+                                </div>
+                            </li>
+
+                            <li class="contactForm__list wow fadeInUp" data-wow-delay="1.6s">
+                                <label for="contact-email">Email :</label>
+                                <div class="contactForm__textArea">
+                                    <input type="email" name="contact-email" id="contact-email" value="" required />
+                                    <div class="invalid-feedback">Campo ok!</div>
+                                </div>
+                            </li>
+
+                            <li class="contactForm__list wow fadeInUp" data-wow-delay="1.6s">
+                                <label for="contact-project">Message :</label>
+                                <div class="contactForm__textArea">
+                                    <textarea type="email" name="contact-project" id="contact-project" rows="6" value=""
+                                        required>
+                                    </textarea>
+                                </div>
+                            </li>
+
+                            <ul class="contactForm__item">
+                                <button type="submit" name="contact-submit" id="contact-submit" class="contactForm__button wow fadeInUp" data-wow-delay="1.7s">
+                                    Send Message
+                                </button>
+                            </ul>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- #### FIN FORM #### -->
+
+        <div class="whitespace"></div>
+
+        <!-- #### INICIO FOOTER #### -->
+        <footer class="footer">
+            <div class="container">
+    
+                <div class="collab">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="wow fadeInUp collab__text">Do you have a project in mind? I can help you.</p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="footer__hr">
+                    <div class="row"></div>
+                </div>
+    
+                <div class="row contact">
+                    <div class="col-lg-4 personal">
+                        <p class="wow fadeInUp contact__text">connect with me</p>
+                        <h4 class="wow fadeInUp contact__number" data-wow-delay="0.2s">number +51 924 162 690</h4>
+                    </div>
+    
+                    <div class="col-lg-4 media">
+                        <p class="media__text">follow me</p>
+    
+                        <ul class="media__items">
+                            <li class="wow fadeInUp media__fb" data-wow-delay="0.4s">fb</li>
+                            <li class="wow fadeInUp media__ig" data-wow-delay="0.6s">ig</li>
+                            <li class="wow fadeInUp media__tw" data-wow-delay="0.8s">tw</li>
+                        </ul>
+    
+                    </div>
+    
+                    <div class="col-lg-4 address">
+                        <p class="wow fadeInUp address__text" data-wow-delay="0.2s">hello</p>
+                        <h4 class="wow fadeInUp address__contact" data-wow-delay="0.2s">joseph98.gutierrez@gmail.com</h4>
+    
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- #### FIN FOOTER #### -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <script src="../js/JQuery.js"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- #### ADD BOOTSTRAP JS ####-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

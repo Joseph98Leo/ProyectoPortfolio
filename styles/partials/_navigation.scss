@@ -1,0 +1,157 @@
+@import "variables.scss";
+@import "mediaQuery.scss";
+
+.header
+{
+    background-color: $color-background;
+    width: $medidaPorcentaje;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    .navigation
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: ($medidaViewHeight/10vh);
+        padding: ($medidaEm/10) ($medidaEm/5) ($medidaEm/8.3) ($medidaEm/2);
+
+        &__brand a
+        {
+            color: $color-text;
+            font-weight: bold;
+            transition: all 0.3s ease-out;
+            text-decoration: none;
+
+            @include navResponsive{
+                display: none;
+            }
+        }
+
+        &__brand a:hover
+        {
+            text-decoration: none;
+        }
+
+        &__menu
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            width: ($medidaPorcentaje/2);
+            margin: 0;
+            padding-right: $medidaEm/2.5;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        &__item
+        {
+            font-weight: 300;
+
+            & a{
+                color: $color-text;
+                text-decoration: none;
+            }
+
+            & a:hover
+            {
+                text-decoration: none;
+            }
+
+            @include navResponsive{
+                display: none;
+            }
+        }
+    }
+}
+
+// ########################### RESPONSIVE NAVIGATION #########################
+
+
+.resize
+{
+
+    z-index: 1;
+    top: 0px;
+    position: fixed;
+    background-color: $color-background;
+    width: $medidaPorcentaje;
+    height: $medidaPorcentaje;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-out;
+
+    &--closeBtn
+    {
+        position: absolute;
+        right: ($medidaEm/7.1);
+        top: ($medidaPixeles/100) - 9px;
+        font-weight: 300;
+        z-index: 3;
+        cursor: pointer;
+        line-height: ($medidaEm/2.2);
+        color: $color-text;
+    }
+
+    &__menu
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        left: $medidaPorcentaje/2;
+        height: $medidaViewHeight;
+        width: $medidaViewWidth;
+        padding: 0;
+    }
+
+    &__item
+    {
+        display: block;
+        text-align: center;
+        font-size: ($medidaEm/6.6);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        padding: ($medidaEm/14) 0;
+
+        & a
+        {
+            color: $color-text;
+            text-decoration: none;
+            font-weight: lighter;
+        }
+
+        & a:hover
+        {
+            text-decoration: none;
+        }
+    }
+
+    &--active
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+#toggle
+{
+    color: $color-text;
+    font-weight: 300;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0; 
+    visibility: hidden;
+    display: none;
+    transition: all 0.3s ease-out;
+
+    @include navResponsive{
+        visibility: visible;
+        opacity: 1;
+        color: $color-text;
+        display: block;
+        position: sticky;
+    }
+}

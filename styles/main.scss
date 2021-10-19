@@ -1,0 +1,18 @@
+// -------- ESTILOS GENERALES
+@import "partials/reset";
+@import "partials/footer";
+@import "partials/navigation";
+// ---------------------------------------
+
+// ----------- VARIABLES 
+@import "partials/variables";
+// ---------------------------------------
+
+// --------- ESTILOS DE PÁGINAS HTML
+@import "partials/pageIndex";
+@import "partials/pageProject";
+@import "partials/pageContact";
+// -----------------------------------------
+
+// --------- ESTILOS QUERY
+@import "partials/mediaQuery";

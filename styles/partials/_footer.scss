@@ -1,0 +1,107 @@
+@import "variables.scss";
+
+.footer
+{
+    .collab
+    {
+        text-align: right;
+
+        &__text
+        {
+            font-weight: lighter !important;
+            margin-bottom: ($medidaPixeles/5);
+        }
+    }
+
+    &__hr
+    {
+        background: rgba(255, 255, 255, 0.2);
+        height: ($medidaPixeles/100) + 1px;
+    }
+
+    .contact
+    {
+        &__text
+        {   
+            font-weight: lighter;
+            color: $color-text;
+        }
+
+        &__number
+        {
+            font-size: ($medidaPixeles/5) - 2px;
+            font-weight: lighter;
+        }
+    }
+
+    .media
+    {
+        text-align: right;
+        font-weight: lighter;
+
+
+        &__items
+        {
+            list-style: none;
+
+            & li
+            {
+                display: inline-block;
+                font-weight: lighter;
+                color: $color-text;
+                font-size: ($medidaPixeles/5) - 2px;
+                padding-left: ($medidaPixeles/5);
+            }
+        }
+
+        &__fb::before
+        {
+            display: inline-block;
+            content: "";
+            border-radius: $medidaPorcentaje;
+            height: ($medidaPixeles/20) - 1px;
+            width: ($medidaPixeles/20) - 1px;
+            margin-right: ($medidaPixeles/20) + 1px;
+            background-color: $fb-color;
+        }
+
+        &__ig::before
+        {
+            display: inline-block;
+            content: "";
+            border-radius: $medidaPorcentaje;
+            height: ($medidaPixeles/20) - 1px;
+            width: ($medidaPixeles/20) - 1px;
+            margin-right: ($medidaPixeles/20) + 1px;
+            background-color: $ig-color;
+        }
+
+        &__tw::before
+        {
+            display: inline-block;
+            content: "";
+            border-radius: $medidaPorcentaje;
+            height: ($medidaPixeles/20) - 1px;
+            width: ($medidaPixeles/20) - 1px;
+            margin-right: ($medidaPixeles/20) + 1px;
+            background-color: $tw-color;
+        }
+    }
+
+    & .address
+    {
+        text-align: right;
+
+        &__text
+        {
+            font-weight: lighter !important;
+            margin-bottom: ($medidaPixeles/5);
+        }
+
+        &__contact
+        {
+            font-size: ($medidaPixeles/5) - 2px;
+            font-weight: lighter;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.textProject
+{
+    padding: 4em 0 1em 0;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.main
+{
+    
+    &__gallery
+    {
+        position: relative;
+        height: auto;
+        width: 90%;
+        margin: auto;
+        padding: 45px 0;    
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 2vh;
+        grid-auto-flow: dense;
+    }
+
+    &__img
+    {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+
+        & img
+        {
+            height: 100%;
+            width: 100%;
+            padding: 0.4em;
+            border-radius: 2em;
+            object-fit: cover;
+            filter: brightness(0.5) grayscale(1);
+            transition: filter 0.3s ease-in-out,
+                        object-fit 0.3s ease-in-out;
+        }
+    }
+
+    &__img:first-child
+    {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+    &__img:nth-child(2n+3)
+    {
+        grid-row-start: span 2;
+    }
+
+    &__img:nth-child(4n+5)
+    {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+    &__img:nth-child(6n+7)
+    {
+        grid-row-start: span 1;
+    }
+
+    &__img:nth-child(8n+9)
+    {
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }
+
+    &__img:hover img
+    {
+        filter: brightness(1) grayscale(0);
+    }
+
+}
+
+// ###### MODAL POPUP BOOTSTRAP JS
+
+#gallery-popup .modal-img{
+	width: 100%;
+}
