@@ -99,4 +99,7 @@
         padding: 5em;
     }
 
+    @include mobile {
+        padding: 5em;
+    }
 }

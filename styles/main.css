@@ -630,6 +630,11 @@ html, body {
     padding: 5em;
   }
 }
+@media only screen and (max-width: 426px) {
+  .textSection {
+    padding: 5em;
+  }
+}
 
 section .about {
   height: 500px;
