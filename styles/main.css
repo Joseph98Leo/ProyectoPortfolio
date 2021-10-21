@@ -17,6 +17,11 @@ html, body {
   font-weight: lighter !important;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 1024px) {
+  .footer .collab__text {
+    text-align: center;
+  }
+}
 .footer__hr {
   background: rgba(255, 255, 255, 0.2);
   height: 2px;
@@ -25,9 +30,19 @@ html, body {
   font-weight: lighter;
   color: #fff;
 }
+@media only screen and (max-width: 1024px) {
+  .footer .contact__text {
+    text-align: center;
+  }
+}
 .footer .contact__number {
   font-size: 18px;
   font-weight: lighter;
+}
+@media only screen and (max-width: 1024px) {
+  .footer .contact__number {
+    text-align: center;
+  }
 }
 .footer .media {
   text-align: right;
@@ -42,6 +57,13 @@ html, body {
   color: #fff;
   font-size: 18px;
   padding-left: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .footer .media__items {
+    text-align: center;
+    margin: 0 0 0 -4em;
+    padding-bottom: 15px;
+  }
 }
 .footer .media__fb::before {
   display: inline-block;
@@ -70,6 +92,11 @@ html, body {
   margin-right: 6px;
   background-color: #55acee;
 }
+@media only screen and (max-width: 1024px) {
+  .footer .media__text {
+    text-align: center;
+  }
+}
 .footer .address {
   text-align: right;
 }
@@ -77,81 +104,21 @@ html, body {
   font-weight: lighter !important;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 1024px) {
+  .footer .address__text {
+    text-align: center;
+  }
+}
 .footer .address__contact {
   font-size: 18px;
   font-weight: lighter;
 }
-
-@media (max-width: 1000px) {
-  .collab__text,
-.personal,
-.media__text,
-.media__items,
-.address__text,
-.address__contact {
+@media only screen and (max-width: 1024px) {
+  .footer .address__contact {
     text-align: center;
   }
+}
 
-  .media__items {
-    margin: 0 0 0 -4em;
-    padding-bottom: 15px;
-  }
-}
-@media (max-width: 980px) {
-  .project {
-    width: 90%;
-    margin: 14px auto;
-  }
-
-  .vertical {
-    display: none;
-  }
-
-  .project1::after,
-.project2::after {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .whitespace {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .contactForm {
-    padding: 4em;
-    width: 98%;
-  }
-
-  .textSection {
-    padding: 5em;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .main_gallery {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  .textProject {
-    font-size: 1.5em;
-  }
-}
-@media only screen and (max-width: 430px) {
-  .main__gallery {
-    display: block;
-  }
-  .main__img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 2% 0;
-  }
-  .main__img img {
-    display: block;
-    filter: brightness(1) grayscale(0);
-  }
-}
 .header {
   background-color: #0f0f0f;
   width: 100%;
@@ -171,11 +138,6 @@ html, body {
   font-weight: bold;
   transition: all 0.3s ease-out;
   text-decoration: none;
-}
-@media only screen and (max-width: 1000px) {
-  .header .navigation__brand a {
-    display: none;
-  }
 }
 .header .navigation__brand a:hover {
   text-decoration: none;
@@ -201,7 +163,12 @@ html, body {
 .header .navigation__item a:hover {
   text-decoration: none;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .header .navigation__item {
+    display: none;
+  }
+}
+@media only screen and (max-width: 426px) {
   .header .navigation__item {
     display: none;
   }
@@ -268,7 +235,16 @@ html, body {
   display: none;
   transition: all 0.3s ease-out;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  #toggle {
+    visibility: visible;
+    opacity: 1;
+    color: #fff;
+    display: block;
+    position: sticky;
+  }
+}
+@media only screen and (max-width: 426px) {
   #toggle {
     visibility: visible;
     opacity: 1;
@@ -281,6 +257,16 @@ html, body {
 .whitespace {
   width: 100%;
   height: 100px;
+}
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .whitespace {
+    display: none;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .whitespace {
+    display: none;
+  }
 }
 
 .hero {
@@ -302,6 +288,11 @@ html, body {
   overflow: hidden;
   transform: translateY(-50%);
 }
+@media only screen and (max-width: 426px) {
+  .hero__line {
+    font-size: 1.3em;
+  }
+}
 .hero__animTypewriter {
   animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
 }
@@ -313,13 +304,23 @@ html, body {
     width: 14em;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
   @keyframes typewriter {
     from {
       width: 0;
     }
     to {
       width: 14em;
+    }
+  }
+}
+@media only screen and (max-width: 426px) {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 15em;
     }
   }
 }
@@ -372,9 +373,31 @@ html, body {
   position: absolute;
   left: 50%;
 }
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .vertical {
+    display: none;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .vertical {
+    display: none;
+  }
+}
 
 .project {
   height: 500px;
+}
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .project {
+    width: 90%;
+    margin: 14px auto;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .project {
+    width: 90%;
+    margin: 14px auto;
+  }
 }
 
 .project1 {
@@ -396,6 +419,16 @@ html, body {
   right: 0;
   bottom: 0;
 }
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .project1::after {
+    display: none;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .project1::after {
+    display: none;
+  }
+}
 
 .project2 {
   background: url(../img/pexels-bob-price-764880-min.jpg) no-repeat 50% 50%;
@@ -416,6 +449,16 @@ html, body {
   right: 0;
   bottom: 0;
 }
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .project2::after {
+    display: none;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .project2::after {
+    display: none;
+  }
+}
 
 .project1:hover,
 .project2:hover {
@@ -427,6 +470,11 @@ html, body {
   font-size: 2em;
   text-align: center;
   font-weight: 300;
+}
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .textProject {
+    font-size: 1.5em;
+  }
 }
 
 .main__gallery {
@@ -440,6 +488,17 @@ html, body {
   grid-gap: 2vh;
   grid-auto-flow: dense;
 }
+@media only screen and (max-width: 426px) {
+  .main__gallery {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .main__gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
 .main__img {
   position: relative;
   height: 100%;
@@ -447,6 +506,14 @@ html, body {
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
+}
+@media only screen and (max-width: 426px) {
+  .main__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 2% 0;
+  }
 }
 .main__img img {
   height: 100%;
@@ -456,6 +523,12 @@ html, body {
   object-fit: cover;
   filter: brightness(0.5) grayscale(1);
   transition: filter 0.3s ease-in-out, object-fit 0.3s ease-in-out;
+}
+@media only screen and (max-width: 426px) {
+  .main__img img {
+    display: block;
+    filter: brightness(1) grayscale(0);
+  }
 }
 .main__img:first-child {
   grid-column-start: span 2;
@@ -545,6 +618,18 @@ html, body {
   background: #dfdfdf;
   color: #0f0f0f;
 }
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .contactForm {
+    padding: 4em;
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  .textSection {
+    padding: 5em;
+  }
+}
 
 section .about {
   height: 500px;
@@ -552,77 +637,6 @@ section .about {
 }
 section .image {
   background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
-}
-
-@media (max-width: 1000px) {
-  .collab__text,
-.personal,
-.media__text,
-.media__items,
-.address__text,
-.address__contact {
-    text-align: center;
-  }
-
-  .media__items {
-    margin: 0 0 0 -4em;
-    padding-bottom: 15px;
-  }
-}
-@media (max-width: 980px) {
-  .project {
-    width: 90%;
-    margin: 14px auto;
-  }
-
-  .vertical {
-    display: none;
-  }
-
-  .project1::after,
-.project2::after {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .whitespace {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .contactForm {
-    padding: 4em;
-    width: 98%;
-  }
-
-  .textSection {
-    padding: 5em;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .main_gallery {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  .textProject {
-    font-size: 1.5em;
-  }
-}
-@media only screen and (max-width: 430px) {
-  .main__gallery {
-    display: block;
-  }
-  .main__img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 2% 0;
-  }
-  .main__img img {
-    display: block;
-    filter: brightness(1) grayscale(0);
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
