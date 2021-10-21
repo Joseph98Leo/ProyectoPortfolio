@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mediaQuery.scss";
 
 .contactForm
 {
@@ -84,4 +85,18 @@
             color: $color-background;
         }
     }
+
+    @include tablet {
+        padding: 4em;
+        width: 98%;
+    }
+
+}
+
+.textSection{
+
+    @include tablet {
+        padding: 5em;
+    }
+
 }

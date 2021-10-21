@@ -10,6 +10,10 @@
         {
             font-weight: lighter !important;
             margin-bottom: ($medidaPixeles/5);
+
+            @include laptop {
+                text-align: center;
+            }
         }
     }
 
@@ -25,12 +29,20 @@
         {   
             font-weight: lighter;
             color: $color-text;
+
+            @include laptop {
+                text-align: center;
+            }
         }
 
         &__number
         {
             font-size: ($medidaPixeles/5) - 2px;
             font-weight: lighter;
+
+            @include laptop {
+                text-align: center;
+            }
         }
     }
 
@@ -51,6 +63,12 @@
                 color: $color-text;
                 font-size: ($medidaPixeles/5) - 2px;
                 padding-left: ($medidaPixeles/5);
+            }
+
+            @include laptop {
+                text-align: center;
+                margin: 0 0 0 -4em;
+                padding-bottom: 15px;
             }
         }
 
@@ -86,6 +104,13 @@
             margin-right: ($medidaPixeles/20) + 1px;
             background-color: $tw-color;
         }
+
+        &__text
+        {
+            @include laptop {
+                text-align: center;
+            }
+        }
     }
 
     & .address
@@ -96,12 +121,20 @@
         {
             font-weight: lighter !important;
             margin-bottom: ($medidaPixeles/5);
+
+            @include laptop {
+                text-align: center;
+            }
         }
 
         &__contact
         {
             font-size: ($medidaPixeles/5) - 2px;
             font-weight: lighter;
+
+            @include laptop {
+                text-align: center;
+            }
         }
     }
 }

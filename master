@@ -1,0 +1,119 @@
+[1mdiff --git a/styles/partials/_mediaQuery.scss b/styles/partials/_mediaQuery.scss[m
+[1mindex 076012d..e69de29 100644[m
+[1m--- a/styles/partials/_mediaQuery.scss[m
+[1m+++ b/styles/partials/_mediaQuery.scss[m
+[36m@@ -1,113 +0,0 @@[m
+[31m-// ################# QUERY FOOTER #####################[m
+[31m-[m
+[31m-@media(max-width: 1000px){[m
+[31m-    .collab__text,[m
+[31m-    .personal,[m
+[31m-    .media__text,[m
+[31m-    .media__items,[m
+[31m-    .address__text,[m
+[31m-    .address__contact[m
+[31m-    {[m
+[31m-        text-align: center;[m
+[31m-    }[m
+[31m-[m
+[31m-    .media__items[m
+[31m-    {[m
+[31m-        margin: 0 0 0 -4em;[m
+[31m-        padding-bottom: 15px;[m
+[31m-    }[m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-// ######################### QUERY NAV ######################[m
+[31m-[m
+[31m-@mixin navResponsive {[m
+[31m-    @media only screen and (max-width: 1000px){[m
+[31m-        @content;[m
+[31m-    }[m
+[31m-}[m
+[31m-[m
+[31m-// ########################## QUERY INDEX HTML ######################[m
+[31m-[m
+[31m-@media(max-width: 980px){[m
+[31m-    .project[m
+[31m-    {[m
+[31m-        width: 90%;[m
+[31m-        margin: 14px auto;[m
+[31m-    }[m
+[31m-[m
+[31m-    .vertical[m
+[31m-    {[m
+[31m-        display: none;[m
+[31m-    }[m
+[31m-[m
+[31m-    .project1::after,[m
+[31m-    .project2::after[m
+[31m-    {[m
+[31m-        display: none;[m
+[31m-    }[m
+[31m-}[m
+[31m-[m
+[31m-@media(max-width: 768px){[m
+[31m-    .whitespace{[m
+[31m-        display: none;[m
+[31m-    }[m
+[31m-}[m
+[31m-[m
+[31m-// ################## QUERY CONTACT HTML #################[m
+[31m-[m
+[31m-@media(max-width: 768px) {[m
+[31m-    .contactForm[m
+[31m-    {[m
+[31m-          padding: 4em;[m
+[31m-          width: 98%;[m
+[31m-    }[m
+[31m-[m
+[31m-    .textSection[m
+[31m-    {[m
+[31m-        padding: 5em;[m
+[31m-    }[m
+[31m-}[m
+[31m-[m
+[31m-// ################## QUERY PROJECT HTML ####################3[m
+[31m-[m
+[31m-@media only screen and (max-width: 768px){[m
+[31m-[m
+[31m-    .main_gallery[m
+[31m-    {[m
+[31m-        display: grid;[m
+[31m-        grid-template-columns: auto auto auto;[m
+[31m-    }[m
+[31m-[m
+[31m-    .textProject[m
+[31m-    {[m
+[31m-        font-size: 1.5em;[m
+[31m-    }[m
+[31m-}[m
+[31m-[m
+[31m-@media only screen and (max-width: 430px){[m
+[31m-[m
+[31m-    .main[m
+[31m-    {[m
+[31m-[m
+[31m-        &__gallery[m
+[31m-        {[m
+[31m-            display: block;[m
+[31m-        }[m
+[31m-[m
+[31m-        &__img[m
+[31m-        {[m
+[31m-            display: block;[m
+[31m-            width: 100%;[m
+[31m-            height: 100%;[m
+[31m-            margin: 2% 0;[m
+[31m-[m
+[31m-            & img[m
+[31m-            {[m
+[31m-                display: block;[m
+[31m-                filter: brightness(1) grayscale(0);[m
+[31m-            }[m
+[31m-        }[m
+[31m-    }[m
+[31m-[m
+[31m-}[m
+\ No newline at end of file[m

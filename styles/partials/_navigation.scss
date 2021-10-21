@@ -23,10 +23,6 @@
             font-weight: bold;
             transition: all 0.3s ease-out;
             text-decoration: none;
-
-            @include navResponsive{
-                display: none;
-            }
         }
 
         &__brand a:hover
@@ -61,7 +57,11 @@
                 text-decoration: none;
             }
 
-            @include navResponsive{
+            @include tablet {
+                display: none;
+            }
+
+            @include mobile {
                 display: none;
             }
         }
@@ -147,7 +147,15 @@
     display: none;
     transition: all 0.3s ease-out;
 
-    @include navResponsive{
+    @include tablet {
+        visibility: visible;
+        opacity: 1;
+        color: $color-text;
+        display: block;
+        position: sticky;
+    }
+
+    @include mobile {
         visibility: visible;
         opacity: 1;
         color: $color-text;
