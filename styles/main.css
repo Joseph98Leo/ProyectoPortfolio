@@ -649,7 +649,7 @@ section .about {
   margin-top: 120px;
 }
 section .image {
-  background: url(../img/paisajeLuna-min.jpg) no-repeat 50% 70%;
+  background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
   background-size: cover;
   margin-bottom: 2em;
 }
