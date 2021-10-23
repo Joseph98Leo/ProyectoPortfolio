@@ -51,6 +51,8 @@ html, body {
 }
 .footer .media__items {
   list-style: none;
+  text-align: center;
+  margin-left: -3em;
 }
 .footer .media__items li {
   display: inline-block;
@@ -93,6 +95,10 @@ html, body {
   margin-right: 6px;
   background-color: #55acee;
 }
+.footer .media__text {
+  margin-top: 1em;
+  text-align: center;
+}
 @media only screen and (max-width: 1024px) {
   .footer .media__text {
     text-align: center;
@@ -102,6 +108,7 @@ html, body {
   text-align: right;
 }
 .footer .address__text {
+  margin-top: 1em;
   font-weight: lighter !important;
   margin-bottom: 20px;
 }
