@@ -649,7 +649,21 @@ section .about {
   margin-top: 120px;
 }
 section .image {
-  background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
+  background: url(/img/paisajeLuna.jpg) no-repeat 50% 70%;
+  background-size: cover;
+  margin-bottom: 2em;
+}
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
+  section .image {
+    height: 70vh;
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 426px) {
+  section .image {
+    height: 20em;
+    width: 27em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
