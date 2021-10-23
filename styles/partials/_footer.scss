@@ -28,6 +28,7 @@
     {
         &__text
         {   
+            margin-top: 1em;
             font-weight: lighter;
             color: $color-text;
 
@@ -130,6 +131,7 @@
 
         &__contact
         {
+            margin-bottom: 2em;
             font-size: ($medidaPixeles/5) - 2px;
             font-weight: lighter;
 

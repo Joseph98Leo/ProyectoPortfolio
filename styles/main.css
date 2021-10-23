@@ -27,6 +27,7 @@ html, body {
   height: 2px;
 }
 .footer .contact__text {
+  margin-top: 1em;
   font-weight: lighter;
   color: #fff;
 }
@@ -110,6 +111,7 @@ html, body {
   }
 }
 .footer .address__contact {
+  margin-bottom: 2em;
   font-size: 18px;
   font-weight: lighter;
 }
