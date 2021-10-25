@@ -17,7 +17,17 @@ html, body {
   font-weight: lighter !important;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 426px) {
+  .footer .collab__text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  .footer .collab__text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
   .footer .collab__text {
     text-align: center;
   }
@@ -31,7 +41,17 @@ html, body {
   font-weight: lighter;
   color: #fff;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 426px) {
+  .footer .contact__text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  .footer .contact__text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
   .footer .contact__text {
     text-align: center;
   }
@@ -40,7 +60,17 @@ html, body {
   font-size: 18px;
   font-weight: lighter;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 426px) {
+  .footer .contact__number {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  .footer .contact__number {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
   .footer .contact__number {
     text-align: center;
   }
@@ -61,7 +91,7 @@ html, body {
   font-size: 18px;
   padding-left: 20px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
   .footer .media__items {
     text-align: center;
     margin: 0 0 0 -4em;
@@ -99,7 +129,17 @@ html, body {
   margin-top: 1em;
   text-align: center;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 426px) {
+  .footer .media__text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  .footer .media__text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
   .footer .media__text {
     text-align: center;
   }
@@ -112,7 +152,17 @@ html, body {
   font-weight: lighter !important;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 426px) {
+  .footer .address__text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  .footer .address__text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
   .footer .address__text {
     text-align: center;
   }
@@ -122,7 +172,17 @@ html, body {
   font-size: 18px;
   font-weight: lighter;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 426px) {
+  .footer .address__contact {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  .footer .address__contact {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 426px) {
   .footer .address__contact {
     text-align: center;
   }
@@ -148,6 +208,11 @@ html, body {
   transition: all 0.3s ease-out;
   text-decoration: none;
 }
+@media only screen and (min-width: 1441px) {
+  .header .navigation__brand a {
+    font-size: 130%;
+  }
+}
 .header .navigation__brand a:hover {
   text-decoration: none;
 }
@@ -164,6 +229,11 @@ html, body {
 }
 .header .navigation__item {
   font-weight: 300;
+}
+@media only screen and (min-width: 1441px) {
+  .header .navigation__item {
+    font-size: 130%;
+  }
 }
 .header .navigation__item a {
   color: #fff;
@@ -423,7 +493,7 @@ html, body {
   color: #fff;
   display: block;
   top: 8%;
-  left: -60%;
+  left: -30%;
   right: 0;
   bottom: 0;
 }
@@ -663,6 +733,11 @@ section .image {
   section .image {
     height: 20em;
     width: 27em;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  section .image {
+    height: 40em;
   }
 }
 

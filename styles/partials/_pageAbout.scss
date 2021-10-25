@@ -22,6 +22,10 @@ section
             height: 20em;
             width: 27em;
         }
+
+        @include desktop {
+            height: 40em;
+        }
     }
     
 }

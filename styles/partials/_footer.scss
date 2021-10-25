@@ -12,7 +12,13 @@
             font-weight: lighter !important;
             margin-bottom: ($medidaPixeles/5);
 
+            @include mobile {
+                text-align: center;
+            }
             @include laptop {
+                text-align: center;
+            }
+            @include tablet {
                 text-align: center;
             }
         }
@@ -32,7 +38,13 @@
             font-weight: lighter;
             color: $color-text;
 
+            @include mobile {
+                text-align: center;
+            }
             @include laptop {
+                text-align: center;
+            }
+            @include tablet {
                 text-align: center;
             }
         }
@@ -42,7 +54,13 @@
             font-size: ($medidaPixeles/5) - 2px;
             font-weight: lighter;
 
+            @include mobile {
+                text-align: center;
+            }
             @include laptop {
+                text-align: center;
+            }
+            @include tablet {
                 text-align: center;
             }
         }
@@ -113,7 +131,13 @@
         {
             margin-top: 1em;
             text-align: center;
+            @include mobile {
+                text-align: center;
+            }
             @include laptop {
+                text-align: center;
+            }
+            @include tablet {
                 text-align: center;
             }
         }
@@ -129,7 +153,13 @@
             font-weight: lighter !important;
             margin-bottom: ($medidaPixeles/5);
 
+            @include mobile {
+                text-align: center;
+            }
             @include laptop {
+                text-align: center;
+            }
+            @include tablet {
                 text-align: center;
             }
         }
@@ -140,7 +170,13 @@
             font-size: ($medidaPixeles/5) - 2px;
             font-weight: lighter;
 
+            @include mobile {
+                text-align: center;
+            }
             @include laptop {
+                text-align: center;
+            }
+            @include tablet {
                 text-align: center;
             }
         }
