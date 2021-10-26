@@ -91,15 +91,31 @@
         width: 98%;
     }
 
+    @include laptop {
+        padding: 4em;
+        width: 98%;
+    }
+
+    @include desktop {
+        padding: 4em;
+        width: 98%;
+    }
+
 }
 
 .textSection{
 
-    @include tablet {
-        padding: 5em;
-    }
-
     @include mobile {
         padding: 5em;
     }
+    @include tablet {
+        padding: 5em;
+    }
+    @include laptop {
+        padding: 5em;
+    }
+    @include desktop {
+        padding: 5em;
+    }
+
 }
