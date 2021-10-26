@@ -23,8 +23,12 @@ section
             width: 27em;
         }
 
+        @include laptop{
+            height: 50em;
+        }
+
         @include desktop {
-            height: 40em;
+            height: 50em;
         }
     }
     

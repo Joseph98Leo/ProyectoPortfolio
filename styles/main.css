@@ -763,9 +763,14 @@ section .image {
     width: 27em;
   }
 }
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  section .image {
+    height: 50em;
+  }
+}
 @media only screen and (min-width: 1441px) {
   section .image {
-    height: 40em;
+    height: 50em;
   }
 }
 
