@@ -85,6 +85,10 @@
             color: $color-background;
         }
     }
+    @include mobile {
+        padding: 4em;
+        width: 98%;
+    }
 
     @include tablet {
         padding: 4em;
