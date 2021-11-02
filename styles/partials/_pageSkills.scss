@@ -1,0 +1,169 @@
+.containerSkills
+{
+    width: 100%;
+    height: 100%;
+    &__titulo
+    {
+        text-align: center;
+        font-size: 10rem;
+        color: yellow;
+        opacity: 0.3;
+        padding: 0 50px;
+        margin-top: 25px;
+    }
+}
+
+.skillsWrap
+{
+    background-color: #010101;
+    position: relative;
+    max-width: 900px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px 50px;
+    opacity: 0.9;
+    margin-top: -50px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px #010101;
+}
+
+.skillsList
+{
+    margin: 20px;
+    letter-spacing: 2px;
+    list-style: none;
+
+    &__bar
+    {
+        display: block;
+        width: 100%;
+        background-color: #010101;
+        height: 6px;
+        overflow: hidden;
+        margin-top: 10px;
+        border: 1px solid rgba(0, 0, 0, .35);
+        border-radius: 3px;
+        box-shadow: 0 0 10px gray;
+
+        & span
+        {
+            height: 6px;
+            background-color: yellow;
+            float: left;
+            opacity: 0.5;
+        }
+
+        &--html
+        {
+            width: 90%;
+            animation: html 2s;
+
+            @keyframes html{
+                0%{
+                    width: 0%;
+                }
+            
+                100%{
+                    width: 90%;
+                }
+            }
+        }   
+
+        &--css
+        {
+            width: 80%;
+            animation: css 2s;
+
+            @keyframes css{
+                0%{
+                    width: 0%;
+                }
+            
+                100%{
+                    width: 80%;
+                }
+            }
+        }
+
+        &--javascript
+        {
+            width: 40%;
+            animation: javascript 2s;
+
+            @keyframes javascript{
+                0%{
+                    width: 0%;
+                }
+            
+                100%{
+                    width: 40%;
+                }
+            }
+        }
+
+        &--bootstrap
+        {
+            width: 70%;
+            animation: bootstrap 2s;
+
+            @keyframes bootstrap{
+                0%{
+                    width: 0%;
+                }
+            
+                100%{
+                    width: 70%;
+                }
+            }
+        }
+
+        &--sass
+        {
+            width: 80%;
+            animation: sass 2s;
+
+            @keyframes sass{
+                0%{
+                    width: 0%;
+                }
+            
+                100%{
+                    width: 80%;
+                }
+            }
+        }
+
+        &--gsap
+        {
+            width: 30%;
+            animation: gsap 2s;
+
+            @keyframes gsap{
+                0%{
+                    width: 0%;
+                }
+            
+                100%{
+                    width: 30%;
+                }
+            }
+        }
+
+        &--jquery
+        {
+            width: 30%;
+            animation: jquery 2s;
+
+            @keyframes jquery{
+                0%{
+                    width: 0%;
+                }
+            
+                100%{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
