@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* ################### ESTILOS BÁSICOS #################### */
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -543,13 +547,15 @@ html, body {
   border: 1px solid #fff;
 }
 
-.containerSkills {
+.sectionSkills {
   width: 100%;
   height: 100%;
+  padding: 3em 7em;
 }
-.containerSkills__titulo {
+.sectionSkills__title {
   text-align: center;
   font-size: 10rem;
+  font-family: "Titan One", cursive;
   color: yellow;
   opacity: 0.3;
   padding: 0 50px;
@@ -557,45 +563,41 @@ html, body {
 }
 
 .skillsWrap {
-  background-color: #010101;
-  position: relative;
-  max-width: 900px;
-  right: 50%;
-  left: 50%;
-  transform: translate(-50%);
-  padding: 20px 50px;
-  opacity: 0.9;
-  margin-top: -50px;
-  border-radius: 10px;
-  box-shadow: 4px 4px 20px #010101;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  border-radius: 1em;
+  box-shadow: 4px 4px 20px #202020;
+  margin-bottom: 5em;
 }
 
-.skillsList {
-  margin: 20px;
-  letter-spacing: 2px;
-  list-style: none;
+.skillsBlock {
+  width: 100%;
 }
-.skillsList__bar {
+.skillsBlock__text {
+  margin: 3em;
+}
+.skillsBlock__span {
   display: block;
   width: 100%;
-  background-color: #010101;
   height: 6px;
-  overflow: hidden;
-  margin-top: 10px;
   border: 1px solid rgba(0, 0, 0, 0.35);
   border-radius: 3px;
   box-shadow: 0 0 10px gray;
-}
-.skillsList__bar span {
-  height: 6px;
+  margin-left: 3em;
+  margin-bottom: 3em;
   background-color: yellow;
-  float: left;
   opacity: 0.5;
 }
-.skillsList__bar--html {
+
+/* ################# ANIMACIONES ######################## */
+.html {
   width: 90%;
-  animation: html 2s;
+  animation: html 3s;
 }
+
 @keyframes html {
   0% {
     width: 0%;
@@ -604,10 +606,11 @@ html, body {
     width: 90%;
   }
 }
-.skillsList__bar--css {
+.css {
   width: 80%;
-  animation: css 2s;
+  animation: css 3s;
 }
+
 @keyframes css {
   0% {
     width: 0%;
@@ -616,10 +619,11 @@ html, body {
     width: 80%;
   }
 }
-.skillsList__bar--javascript {
+.javascript {
   width: 40%;
-  animation: javascript 2s;
+  animation: javascript 3s;
 }
+
 @keyframes javascript {
   0% {
     width: 0%;
@@ -628,10 +632,11 @@ html, body {
     width: 40%;
   }
 }
-.skillsList__bar--bootstrap {
+.bootstrap {
   width: 70%;
-  animation: bootstrap 2s;
+  animation: bootstrap 3s;
 }
+
 @keyframes bootstrap {
   0% {
     width: 0%;
@@ -640,10 +645,11 @@ html, body {
     width: 70%;
   }
 }
-.skillsList__bar--sass {
+.sass {
   width: 80%;
-  animation: sass 2s;
+  animation: sass 3s;
 }
+
 @keyframes sass {
   0% {
     width: 0%;
@@ -652,10 +658,11 @@ html, body {
     width: 80%;
   }
 }
-.skillsList__bar--gsap {
+.gsap {
   width: 30%;
-  animation: gsap 2s;
+  animation: gsap 3s;
 }
+
 @keyframes gsap {
   0% {
     width: 0%;
@@ -664,10 +671,11 @@ html, body {
     width: 30%;
   }
 }
-.skillsList__bar--jquery {
+.jquery {
   width: 30%;
-  animation: jquery 2s;
+  animation: jquery 3s;
 }
+
 @keyframes jquery {
   0% {
     width: 0%;
@@ -676,7 +684,6 @@ html, body {
     width: 30%;
   }
 }
-
 .textProject {
   padding: 4em 0 1em 0;
   font-size: 2em;

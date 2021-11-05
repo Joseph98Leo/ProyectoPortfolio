@@ -1,11 +1,16 @@
-.containerSkills
+
+
+.sectionSkills
 {
     width: 100%;
     height: 100%;
-    &__titulo
+    padding: 3em 7em;
+
+    &__title
     {
         text-align: center;
         font-size: 10rem;
+        font-family: 'Titan One', cursive;
         color: yellow;
         opacity: 0.3;
         padding: 0 50px;
@@ -15,155 +20,150 @@
 
 .skillsWrap
 {
-    background-color: #010101;
-    position: relative;
-    max-width: 900px;
-    right: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    padding: 20px 50px;
-    opacity: 0.9;
-    margin-top: -50px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 20px #010101;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    border-radius: 1em;
+    box-shadow: 4px 4px 20px #202020;
+    margin-bottom: 5em;
 }
 
-.skillsList
+.skillsBlock
 {
-    margin: 20px;
-    letter-spacing: 2px;
-    list-style: none;
+    width: 100%;
 
-    &__bar
+    &__text
+    {
+    margin: 3em;
+    }
+
+    &__span
     {
         display: block;
         width: 100%;
-        background-color: #010101;
         height: 6px;
-        overflow: hidden;
-        margin-top: 10px;
         border: 1px solid rgba(0, 0, 0, .35);
         border-radius: 3px;
         box-shadow: 0 0 10px gray;
+        margin-left: 3em;
+        margin-bottom: 3em;
+        background-color: yellow;
+        opacity: 0.5;
+    }
+}
+/* ################# ANIMACIONES ######################## */
 
-        & span
-        {
-            height: 6px;
-            background-color: yellow;
-            float: left;
-            opacity: 0.5;
-        }
 
-        &--html
-        {
-            width: 90%;
-            animation: html 2s;
+.html
+{
+    width: 90%;
+    animation: html 3s;
+}
 
-            @keyframes html{
-                0%{
-                    width: 0%;
-                }
-            
-                100%{
-                    width: 90%;
-                }
-            }
-        }   
+@keyframes html{
+    0%{
+        width: 0%;
+    }
 
-        &--css
-        {
-            width: 80%;
-            animation: css 2s;
+    100%{
+        width: 90%;
+    }
+}
 
-            @keyframes css{
-                0%{
-                    width: 0%;
-                }
-            
-                100%{
-                    width: 80%;
-                }
-            }
-        }
+.css
+{
+    width: 80%;
+    animation: css 3s;
+}
 
-        &--javascript
-        {
-            width: 40%;
-            animation: javascript 2s;
+@keyframes css{
+    0%{
+        width: 0%;
+    }
 
-            @keyframes javascript{
-                0%{
-                    width: 0%;
-                }
-            
-                100%{
-                    width: 40%;
-                }
-            }
-        }
+    100%{
+        width: 80%;
+    }
+}
 
-        &--bootstrap
-        {
-            width: 70%;
-            animation: bootstrap 2s;
+.javascript
+{
+    width: 40%;
+    animation: javascript 3s;
+}
 
-            @keyframes bootstrap{
-                0%{
-                    width: 0%;
-                }
-            
-                100%{
-                    width: 70%;
-                }
-            }
-        }
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
 
-        &--sass
-        {
-            width: 80%;
-            animation: sass 2s;
+    100%{
+        width: 40%;
+    }
+}
 
-            @keyframes sass{
-                0%{
-                    width: 0%;
-                }
-            
-                100%{
-                    width: 80%;
-                }
-            }
-        }
+.bootstrap
+{
+    width: 70%;
+    animation: bootstrap 3s;
+}
 
-        &--gsap
-        {
-            width: 30%;
-            animation: gsap 2s;
+@keyframes bootstrap{
+    0%{
+        width: 0%;
+    }
 
-            @keyframes gsap{
-                0%{
-                    width: 0%;
-                }
-            
-                100%{
-                    width: 30%;
-                }
-            }
-        }
+    100%{
+        width: 70%;
+    }
+}
 
-        &--jquery
-        {
-            width: 30%;
-            animation: jquery 2s;
+.sass
+{
+    width: 80%;
+    animation: sass 3s;
+}
 
-            @keyframes jquery{
-                0%{
-                    width: 0%;
-                }
-            
-                100%{
-                    width: 30%;
-                }
-            }
-        }
+@keyframes sass{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 80%;
+    }
+}
+
+.gsap
+{
+    width: 30%;
+    animation: gsap 3s;
+}
+
+@keyframes gsap{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 30%;
+    }
+}
+
+.jquery
+{
+    width: 30%;
+    animation: jquery 3s;
+}
+
+@keyframes jquery{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 30%;
     }
 }
