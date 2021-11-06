@@ -1,9 +1,5 @@
 @charset "UTF-8";
 /* ################### ESTILOS BÁSICOS #################### */
-* {
-  box-sizing: border-box;
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -550,16 +546,6 @@ html, body {
 .sectionSkills {
   width: 100%;
   height: 100%;
-  padding: 3em 7em;
-}
-.sectionSkills__title {
-  text-align: center;
-  font-size: 10rem;
-  font-family: "Titan One", cursive;
-  color: yellow;
-  opacity: 0.3;
-  padding: 0 50px;
-  margin-top: 25px;
 }
 
 .skillsWrap {
@@ -574,7 +560,7 @@ html, body {
 }
 
 .skillsBlock {
-  width: 100%;
+  width: 90%;
 }
 .skillsBlock__text {
   margin: 3em;
