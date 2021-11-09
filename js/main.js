@@ -41,3 +41,13 @@ document.addEventListener("click", function (e) {
         myModal.show();
     }
 })
+
+// ################### HOVER EFFECTS ######################
+
+new hoverEffect({
+    parent: document.querySelector('.imgAbout'),
+    image1: '../img/estudiando-min.jpg',
+    image2: '../img/autor.jpg',
+    displacementImage: '../img/displacement.png',
+    imagesRatio: '1.35'
+})
