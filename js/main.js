@@ -50,7 +50,7 @@ new hoverEffect({
     image2: '../img/estudiando-min.jpg',
     displacementImage: '../img/displacement.png',
     imagesRatio: '1.35'
-})
+});
 
 new hoverEffect({
     parent: document.querySelector('.imgAbout2'),
@@ -58,4 +58,15 @@ new hoverEffect({
     image2: '../img/estudiando-min.jpg',
     displacementImage: '../img/displacement.png',
     imagesRatio: '1.35'
-})
+});
+
+// -----------------------------------
+
+$('.effectTyp').t({
+    caret:'<span style="color:hotpink;">•</span>',
+    typing:function(elm,chr){
+   
+      if(chr.match(/\-trigger/))
+        $('#pow-txt').show().delay(5).fadeOut(0);
+    }
+   });

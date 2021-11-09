@@ -22,46 +22,45 @@
         display: block;
     }
 
+    @include tablet{
+        display: block;
+    }
+
     &__info
     {
-        width: 50%;
-        font-size: 3rem;
+        width: 30%;
+        font-size: 1.5em;
         color: whitesmoke;
-        margin-right: -8%;
-        z-index: 1;
 
         @include mobile{
             padding-top: 5em;
             padding-bottom: 2em;
             font-size: 1em;
+            width: 50%;
             margin: auto;
         }
 
         @include tablet{
-            font-size: 2rem;
+            padding-top: 5em;
+            padding-bottom: 2em;
+            font-size: 1em;
+            width: 50%;
+            margin: auto;
         }
 
     }
 }
 
-.imgAbout1
+.imgEffect
 {
     width: 50%;
     height: 500px;
 
     @include mobile{
         margin: auto;
-        z-index: 2;
     }
-}
 
-.imgAbout2
-{
-    width: 50%;
-    height: 500px;
-
-    @include mobile{
+    @include tablet{
         margin: auto;
-        z-index: 2;
     }
 }
