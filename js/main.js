@@ -45,8 +45,16 @@ document.addEventListener("click", function (e) {
 // ################### HOVER EFFECTS ######################
 
 new hoverEffect({
-    parent: document.querySelector('.imgAbout'),
+    parent: document.querySelector('.imgAbout1'),
     image1: '../img/autor.jpg',
+    image2: '../img/estudiando-min.jpg',
+    displacementImage: '../img/displacement.png',
+    imagesRatio: '1.35'
+})
+
+new hoverEffect({
+    parent: document.querySelector('.imgAbout2'),
+    image1: '../img/adoptado-min.jpg',
     image2: '../img/estudiando-min.jpg',
     displacementImage: '../img/displacement.png',
     imagesRatio: '1.35'

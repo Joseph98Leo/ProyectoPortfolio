@@ -911,15 +911,24 @@ html, body {
   }
 }
 
-.imgAbout {
+.imgAbout1 {
   width: 50%;
   height: 500px;
-  background-size: cover;
 }
 @media only screen and (max-width: 426px) {
-  .imgAbout {
+  .imgAbout1 {
     margin: auto;
-    background-image: url(/img/coding.png);
+    z-index: 2;
+  }
+}
+
+.imgAbout2 {
+  width: 50%;
+  height: 500px;
+}
+@media only screen and (max-width: 426px) {
+  .imgAbout2 {
+    margin: auto;
     z-index: 2;
   }
 }

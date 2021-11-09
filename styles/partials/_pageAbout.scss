@@ -44,15 +44,24 @@
     }
 }
 
-.imgAbout
+.imgAbout1
 {
     width: 50%;
     height: 500px;
-    background-size: cover;
 
     @include mobile{
         margin: auto;
-        background-image: url(/img/coding.png);
+        z-index: 2;
+    }
+}
+
+.imgAbout2
+{
+    width: 50%;
+    height: 500px;
+
+    @include mobile{
+        margin: auto;
         z-index: 2;
     }
 }
