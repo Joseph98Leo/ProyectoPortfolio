@@ -46,8 +46,8 @@ document.addEventListener("click", function (e) {
 
 new hoverEffect({
     parent: document.querySelector('.imgAbout'),
-    image1: '../img/estudiando-min.jpg',
-    image2: '../img/autor.jpg',
+    image1: '../img/autor.jpg',
+    image2: '../img/estudiando-min.jpg',
     displacementImage: '../img/displacement.png',
     imagesRatio: '1.35'
 })
