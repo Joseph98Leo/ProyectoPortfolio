@@ -48,7 +48,7 @@ new hoverEffect({
     parent: document.querySelector('.imgAbout1'),
     image1: '../img/autor.jpg',
     image2: '../img/BanderaDelPeru.png',
-    displacementImage: '../img/displacement.png',
+    displacementImage: '../img/displacement1.jpg',
     imagesRatio: '1.35'
 });
 
@@ -56,7 +56,7 @@ new hoverEffect({
     parent: document.querySelector('.imgAbout2'),
     image1: '../img/adoptado-min.jpg',
     image2: '../img/mascota2-min.jpg',
-    displacementImage: '../img/displacement.png',
+    displacementImage: '../img/displacement2.jpg',
     imagesRatio: '1.35'
 });
 
@@ -64,7 +64,7 @@ new hoverEffect({
     parent: document.querySelector('.imgAbout3'),
     image1: '../img/practicaCodigo.jpg',
     image2: '../img/fullStack.jpg',
-    displacementImage: '../img/displacement.png',
+    displacementImage: '../img/displacement3.jpg',
     imagesRatio: '1.35'
 });
 
